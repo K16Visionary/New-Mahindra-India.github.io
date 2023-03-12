@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login an Registration Page with Video Backgroud</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="accoutn_main">
+        <video muted loop autoplay class="video">
+            <source src="Alturas.mp4.mp4" type="video/mp4">
+        </video>
+
+        <div class="form_area">
+            <div class="main_con">
+                <div class="headline">
+                    
+                </div>
+
+                <div class="form_con">
+                    <div class="log_form">
+                        <h2>Login Now!!</h2>
+                        <form action="">
+                            <div class="input-box">
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" name="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="button">
+                                <button type="submit">LOGIN</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Registration form -->
+                    <div class="reg_form hidden">
+                        <h2>Register Now!!</h2>
+                        <form action="">
+                            <div class="input-box">
+                                <input type="text" name="name" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" name="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="button">
+                                <button type="submit">REGISTRATION</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-center">
+                        <span id="action">Switch Mode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#action").click(function(){
+            $(".log_form, .reg_form").toggle(1200);
+        });
+    </script>
+</body>
+</html>
+  
